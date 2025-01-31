@@ -23,8 +23,8 @@ namespace Movement_State
 
         private Vector3 _spherePosition;
 
-        [SerializeField] private float turnSpeed = 100f;
-        [SerializeField] private float fastTurnSpeed = 200f;
+        // [SerializeField] private float turnSpeed = 100f;
+        // [SerializeField] private float fastTurnSpeed = 200f;
 
         // [SerializeField] private bool isRootMotionned = false;
         [SerializeField] private Transform rootCharacter;

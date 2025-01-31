@@ -26,6 +26,11 @@ namespace AimState
         [HideInInspector] public float hipFov;
         [HideInInspector] public float currentFov;
         [SerializeField] public float fovSmoothSpeed = 10f;
+        
+        [SerializeField] Transform aimPosition;
+        [SerializeField] private float aimSmoothSpeed=10f;
+        [SerializeField] LayerMask aimLayer;
+        
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -46,6 +51,16 @@ namespace AimState
             _currentAimState.UpdateState(this);
             
             //vcamera.Lens.FieldOfView = Mathf.Lerp(Camera.main.fieldOfView, hipFov, fovSmoothSpeed * Time.deltaTime);
+            
+            Vector3 screenCenter = new Vector3(0.5f, 0.5f,Camera.main.farClipPlane);
+            
+            Ray ray = Camera.main.ViewportPointToRay(screenCenter);
+            Debug.DrawRay(ray.origin, ray.direction*10, Color.yellow);
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, aimLayer))
+            {
+                aimPosition.position = Vector3.Lerp(aimPosition.position, hit.point, aimSmoothSpeed * Time.deltaTime);
+                
+            }
         }
 
         // private void LateUpdate()

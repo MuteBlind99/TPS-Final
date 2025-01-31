@@ -1,4 +1,3 @@
-
 using Cinemachine;
 using UnityEngine;
 
@@ -13,12 +12,12 @@ namespace AimState
         [HideInInspector] public Animator animator;
 
         [SerializeField] Transform camFollowPos;
-        [SerializeField] Transform  player;
+        [SerializeField] Transform player;
 
         // public InputAxis verticalAxis = new InputAxis { Value = 0f };
         // public InputAxis horizontalAxis = new InputAxis { Value = 0f };
         public float sensitivity = 3f;
-        
+
         CinemachineInputAxisDriver _xAxis, _yAxis;
         [HideInInspector] public CinemachineVirtualCamera vcamera;
         [SerializeField] public CinemachineVirtualCamera aimcamera;
@@ -26,21 +25,20 @@ namespace AimState
         [HideInInspector] public float hipFov;
         [HideInInspector] public float currentFov;
         [SerializeField] public float fovSmoothSpeed = 10f;
+
         
-        [SerializeField] Transform aimPosition;
-        [SerializeField] private float aimSmoothSpeed=10f;
-        [SerializeField] LayerMask aimLayer;
+
         
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             vcamera = GetComponentInChildren<CinemachineVirtualCamera>();
-            hipFov = Camera.main.fieldOfView;   
+            hipFov = Camera.main.fieldOfView;
             animator = GetComponent<Animator>();
             SwitchState(HipFireState);
-            
         }
+
         void Update()
         {
             // float xAxis = Input.GetAxis("Mouse X");
@@ -49,18 +47,10 @@ namespace AimState
             // horizontalAxis.Value += xAxis * sensitivity * Time.deltaTime;
             // verticalAxis.Value += yAxis * sensitivity * Time.deltaTime;
             _currentAimState.UpdateState(this);
-            
+
             //vcamera.Lens.FieldOfView = Mathf.Lerp(Camera.main.fieldOfView, hipFov, fovSmoothSpeed * Time.deltaTime);
+
             
-            Vector3 screenCenter = new Vector3(0.5f, 0.5f,Camera.main.farClipPlane);
-            
-            Ray ray = Camera.main.ViewportPointToRay(screenCenter);
-            Debug.DrawRay(ray.origin, ray.direction*10, Color.yellow);
-            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, aimLayer))
-            {
-                aimPosition.position = Vector3.Lerp(aimPosition.position, hit.point, aimSmoothSpeed * Time.deltaTime);
-                
-            }
         }
 
         // private void LateUpdate()

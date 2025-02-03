@@ -4089,14 +4089,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669767e9f39f8184784fbb84aa1ca8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 0.5
+  fireRate: 1
   semiAutomatic: 1
-  aimPosition: {fileID: 0}
+  aimPosition: {fileID: 942525257}
   aimSmoothSpeed: 10
   aimLayer:
     serializedVersion: 2
-    m_Bits: 0
-  damageRate: 50
+    m_Bits: 192
+  damageRate: 25
 --- !u!4 &7802452363081148632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4920186705917131588, guid: 8f01f504094ef554f91592eb733f2105, type: 3}

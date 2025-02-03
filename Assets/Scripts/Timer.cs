@@ -1,16 +1,26 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    float _timer;
+    [FormerlySerializedAs("_timer")] [SerializeField] float timer;
     // Update is called once per frame
     void Update()
     {
-        _timer += Time.deltaTime;
-        int minutes = Mathf.FloorToInt(_timer / 60);
-        int seconds = Mathf.FloorToInt(_timer % 60);
+        if (timer > 0)
+        {
+             timer -= Time.deltaTime;
+        }
+        else if (timer <= 0)
+        {
+            timer = 0;
+            
+            timerText.color = Color.red;
+        }
+        int minutes = Mathf.FloorToInt(timer / 60);
+        int seconds = Mathf.FloorToInt(timer % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

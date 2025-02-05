@@ -7,6 +7,7 @@ public class Target : MonoBehaviour
     public bool targetIsDead = false;
     private float _currentHealth;
 
+    public event Action<Target> OnDestroy;
     private void Start()
     {
         _currentHealth = maxHealth;
@@ -17,7 +18,7 @@ public class Target : MonoBehaviour
         _currentHealth -= damage;
         if (_currentHealth <= 0)
         {
-            targetIsDead = true;
+           OnDestroy?.Invoke(this);
             Destroy(gameObject);
             
         }

@@ -1,31 +1,40 @@
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class TargetCountdown : Target
+public class TargetCountdown : MonoBehaviour
 {
     [SerializeField] private GameObject[] targetsNumber;
     [SerializeField] private TextMeshProUGUI countdownText;
-
-    private int _targetsCurrentNumber=16;
-
+    [SerializeField]private TargetManager manager;
+    //private int _targetsCurrentNumber;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    // void Awake()
-    // {
-    //     _targetsCurrentNumber = targetsNumber.Length;
-    // }
+    void Awake()
+    {
+        //_targetsCurrentNumber = targetsNumber.Length;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (targetIsDead==true)
-        {
-            targetIsDead = false;
-            _targetsCurrentNumber--;
-            countdownText.text = _targetsCurrentNumber.ToString();
-        }
-        else
-        {
-            countdownText.text = _targetsCurrentNumber.ToString();
-        }
+        countdownText.text = manager.TargetsCurrentNumber.ToString();
+        // if (targetIsDead==true)
+        // {
+        //     targetIsDead = false;
+        //     _targetsCurrentNumber--;
+        //     countdownText.text = _targetsCurrentNumber.ToString();
+        // }
+        // else
+        // {
+        //     //countdownText.text = _targetsCurrentNumber.ToString();
+        // }
+    }
+
+    public void SetTarget(GameObject target)
+    {
+        
+       
     }
 }

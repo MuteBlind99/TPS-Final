@@ -498,6 +498,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (3)
@@ -581,6 +585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (5)
@@ -1099,6 +1107,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (8)
@@ -1177,6 +1189,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (1)
@@ -1405,6 +1421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (2)
@@ -1555,6 +1575,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (15)
@@ -2161,6 +2185,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (7)
@@ -2239,6 +2267,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (4)
@@ -2460,8 +2492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812f135a3d1c05d41adee1e1262ea3aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  targetIsDead: 0
   targetsNumber:
   - {fileID: 987301752}
   - {fileID: 405490270}
@@ -2480,6 +2510,7 @@ MonoBehaviour:
   - {fileID: 2113437923}
   - {fileID: 1664258987}
   countdownText: {fileID: 1722276524}
+  manager: {fileID: 1773484542}
 --- !u!1 &1028513131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2737,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (6)
@@ -2784,6 +2819,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (12)
@@ -2997,6 +3036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (14)
@@ -3975,6 +4018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1773484540}
   - component: {fileID: 1773484541}
+  - component: {fileID: 1773484542}
   m_Layer: 7
   m_Name: Targets
   m_TagString: Untagged
@@ -4027,6 +4071,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   targetIsDead: 0
+--- !u!114 &1773484542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773484539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec3497c9efb9e847a0760f08614a44e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1774239067 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
@@ -4045,6 +4101,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (11)
@@ -4166,6 +4226,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (10)
@@ -4459,6 +4523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (13)
@@ -4537,6 +4605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark (9)
@@ -4913,6 +4985,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773484540}
     m_Modifications:
+    - target: {fileID: 4164055341419029691, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6511242050416952824, guid: 146392cf9ceed0d43a3da4cd26efd1f2, type: 3}
       propertyPath: m_Name
       value: mark
@@ -5034,6 +5110,10 @@ PrefabInstance:
       propertyPath: redSpot
       value: 
       objectReference: {fileID: 942525257}
+    - target: {fileID: 6353296429892343115, guid: 8f01f504094ef554f91592eb733f2105, type: 3}
+      propertyPath: damageRate
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7343250838091331745, guid: 8f01f504094ef554f91592eb733f2105, type: 3}
       propertyPath: m_Data.m_SourceObjects.m_Item0.transform
       value: 
@@ -5046,6 +5126,14 @@ PrefabInstance:
       propertyPath: camFollowPos
       value: 
       objectReference: {fileID: 1774239067}
+    - target: {fileID: 8623222259727998863, guid: 8f01f504094ef554f91592eb733f2105, type: 3}
+      propertyPath: fireRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623222259727998863, guid: 8f01f504094ef554f91592eb733f2105, type: 3}
+      propertyPath: damageRate
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8623222259727998863, guid: 8f01f504094ef554f91592eb733f2105, type: 3}
       propertyPath: aimPosition
       value: 

@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [FormerlySerializedAs("_timer")] [SerializeField] float timer;
+    [SerializeField] float timer;
     // Update is called once per frame
     void Update()
     {

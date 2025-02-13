@@ -36,6 +36,10 @@ public class WeaponManager : MonoBehaviour
         {
             if (_canshoot)
             {
+                if (hit.collider)
+                {
+                    Debug.Log("hit");
+                }
                 if (hit.collider.TryGetComponent(out Target target))
                 {
                     target.TakeDamage(damageRate);
